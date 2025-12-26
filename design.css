@@ -1,0 +1,70 @@
+h1 {
+    color: rgb(172, 30, 207);
+    text-align: center;
+    background-color: rgb(10, 245, 245);
+}
+body{
+    background-color: violet;
+}
+p{
+    font-size: 50px;
+    color:white
+}
+nav {
+    background-color: rgb(4, 176, 245);
+    margin:10px;
+    padding:10px;
+    float: up;
+    font-size: 50px;
+}
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+}
+a {
+    color:rgb(19, 0, 128)
+}
+img{
+    width:1300px ;
+    height:750px;
+}
+body{
+    background-image: url(images/999.webp);
+}
+iframe{
+    display: block;
+    margin: auto;
+}
+.logo img{
+    float:right ;
+    width:50px ;
+    height: auto;
+}
+.circle-logo {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+p1 {
+    font-size:55px;
+    color: aqua;
+}
+p2 {
+    font-size: 40px;
+    color: rgb(9, 255, 0);
+}
+
+p3 {
+    font-size: 40px;
+    color: rgb(247, 0, 255);
+}
+
+p4 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+p5 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}

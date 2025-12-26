@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contract Us</title> 
+       <nav>
+           <a href="index.html">home</a>
+        <a href="about.html">About the app</a>
+        <a href="location.html">Location</a>
+        <a href="information.html">More Information</a>
+        <a href="Contract.html">Contract</a>
+         <link href="design.css" rel="stylesheet">
+         <!DOCTYPE html>
+<html><body>
+        <h1>Contract Us</h1>
+       <P></P>
+    </body>
+    <head><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      background: #fff;
+      padding: 20px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 14px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    pre {
+      background: #eee;
+      padding: 15px;
+      white-space: pre-wrap;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <input id="First Name" placeholder="First Name">
+  <input id="Last Name" placeholder="Last Name">
+  <input id="Student Code" placeholder="Student Code">
+  <input id="What mental is wrong with you write here" placeholder="What mental is wrong with you write here">
+  <input id="Phone Number" placeholder="Phone number">
+  
+
+  <button onclick="generateContract()">Generate</button>
+
+  <pre id="output"></pre>
+</div>
+
+<script>
+function generateContract() {
+  const partyA = document.getElementById("partyA").value;
+  const partyB = document.getElementById("partyB").value;
+  const service = document.getElementById("service").value;
+  const amount = document.getElementById("amount").value;
+  const startDate = document.getElementById("startDate").value;
+  const endDate = document.getElementById("endDate").value;
+
+  const contract = `
+This agreement is made between ${partyA} and ${partyB}.
+
+1. SERVICES
+${partyA} agrees to provide the following:
+${service}
+
+2. PAYMENT
+${partyB} agrees to pay $${amount} USD.
+
+3. TERM
+This agreement begins on ${startDate} and ends on ${endDate}.
+
+4. SIGNATURES
+
+Party A: ________________________   Date: __________
+
+Party B: ________________________   Date: __________
+`;
+
+  document.getElementById("output").textContent = contract;
+}
+</script>
+
+</body>
+</html>
